@@ -17,6 +17,13 @@ So we basically have the following steps to do:
 Initially, I thought I'd write my own stuff but then decided to use pagic because why reinvent the wheel.
 Early results are promising - the blog seems to work.
 After fleshing out the blog a bit more, I got it to a nice state.
+## Automation
+I wanted to automate git file watching.
+First I tried a shell script but that didn't really work so I moved to python.
+Then I tried installing deno - the js runtime - onto my rpi (aarch64/linux). Naturally Deno doesn't support aarch64 on linux. Of Course it wouldn't. 
+This would also be when my raspberry pi crashed and stopped working.
+I make it do a lot of work. But I created a docker-compose setup to run an aarch64 build. 
+But docker is stupid so I shall run it natively
 
 Features to add 
 - rss feeding
