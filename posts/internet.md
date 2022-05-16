@@ -6,7 +6,7 @@ tags:
  - projects
 ---
 # Internet moderation
-When people talk about moderation on the internet they focus on what's allowed on the internet. This is a completely valid point and important to deal with. But maybe the way we're dealing with this is wrong.
+When people talk about moderation on the internet they focus on what's allowed on the internet. While that is important, we fail to consider who actually controls the flow of information.
 ## The problem
 Lets simplify the "internet". 
  - The internet is made up of platforms
@@ -21,7 +21,7 @@ But some examples of what most will say constitutes undesirable content:
  - Child porn
  - Manifestos of mass shooters
  - ISIS Recruitment videos
- - Russian propaganda/bots
+ - Russian propaganda
 
 And some desirable content that others may seek to remove:
  - Protest apps against dictators
@@ -31,10 +31,11 @@ And some desirable content that others may seek to remove:
 And some uncontroversially desirable content:
  - cat pics
 
-The problem is several fold
+There are several problems:
  - Platforms are incentivized to promote controversial content, yet are responsible for removing it.
- - The amount of content is so large that it is impossible to meaningfully sift through it 
- - The interests of platforms, governments, and users don't align.
+ - The amount of content is so large that it is impossible to meaningfully sift through it.
+ - Platforms, governments, and users don't agree on what is desirable and undesirable content.
+ - This results in undesirable content being promoted while a small amount of desirable is removed. 
 
 What we need is a solution which removes undesirable content and promotes desirable content.
 ## The solutions  
@@ -51,7 +52,8 @@ To remove undesirable content, people have several means:
  - Buy your own platform 
 
 And this solution is *not* working. The amount of undesirable content on the internet keeps growing with no end in sight.  
-Make no mistake, this is intentional. Foreign enemies have used our own tools to drive us apart and wield armies of bots and trolls against us. Platforms know they promote disinformation but don't stop it because it makes them money. Information Warfare is being waged against us even if we don't accept that we're fighting this war.  
+Make no mistake, this is intentional. [Foreign enemies](https://en.wikipedia.org/wiki/Russian_web_brigades) have used our own tools to drive us apart and wield armies of bots and trolls against us. Platforms know they promote disinformation but don't stop it because it makes them money. Information Warfare is being waged against us even if we don't accept that we're fighting this war. 
+
 Much effort has been made to shift control of the platforms to and from groups that favor certain groups. But in the end, this is a system controlled by money and influence - not one of democratic means.
 Furthermore, platforms are very vulnerable to force. Employees can be [threatened](https://www.wired.com/story/opinion-in-russia-apple-and-google-staff-get-muscled-up-by-the-state/). This means that while democratic governments wield little influence over our companies, foreign dictatorships can censor the web as they please.  
 ### The government centric approach 
@@ -68,10 +70,10 @@ But this has several key issues:
  - Governments are slow. Especially in the US, our politicians do not have the skill to implement good internet legislation.
 
 Make no mistake, these problems can be mitigated through laws that protect US businesses from foreign censorship and increased human verification. 
-This is my prefered solution and I think it's critical for a democratic society to implement these laws. 
+This is my preferred solution and I think it's critical for a democratic society to implement these laws. 
 ### The people-centric approach
-
-Let's say we have a censorship resistant platform - bagelnet. No one can remove content from it or control what's get added (assuming there's infinite storage and bandwidth).  
+This idea is based on the idea of [matrix](https://matrix.org/docs/guides/moderation#outstanding-issues-2)'s [relative reputation](https://docs.google.com/document/d/1rijGLs9-RJ9Mz2Yk5wWycMbErrCDK1VJkACdUPMN0-M/edit#heading=h.j85wiuh6uzgi)
+Let's say we have a censorship resistant platform. No one can remove content from it or control what's get added (assuming there's infinite storage and bandwidth).  
 Everyone can create users with unique identifiers.  
 We let users define their reputation with other users on a scale of -1 to 1. At each level, certain actions are preformed. For example:
 - -0.5 > reputation: block
@@ -96,12 +98,13 @@ Censorship becomes harder because an organization would have to wield their infl
 And we can move this beyond one platform. Platforms can track the reputation of users across platforms and discourage raiding. 
 Platforms can combine this with the previous methods, removing individuals entirely from the platform manually but letting such a system filter out the hordes of trolls.  
 #### Problems 
- - This heavily pushes people into boxes. While one can optimistically say people will follow "neutral" sources, this kind of moderation will push people into echo-chambers. One solution would be to favor content around ~0.5 reputation and taper off from there. But even that likely wouldn't be enough.
- - Privacy: This would be difficult to implement in a privacy-friendly way. It does tie everyone to an easily de-anonymizable identifier.
+ - This heavily pushes people into boxes. While one can optimistically say people will follow "neutral" sources, this kind of moderation will push people into echo-chambers. One solution would be to favor content around ~0.5 reputation and taper off from there. But even that likely wouldn't be enough. Platforms and Governments can remove troublesome users but this makes censorship much easier.
+ - Privacy: This would be difficult to implement in a privacy-friendly way. It ties everyone to an identifier with easy to follow links to their friends.
  - Power: Unlike platforms, I have no control of a platform. Unlike the government, I don't have the means to force them to do anything, especially if it hurts their profits.
+ - It still leaves all this undesirable content on the internet, even if we can't see it.
 #### Prototype
 A prototype for this would be a browser extension which can be used to block users from the internet, similar to the [Shinigami Eyes](https://shinigami-eyes.github.io/) extension. 
-There would have to be a single server which stores the reputation of everyone and assigns people handles. 
-
+There would have to be a single server which stores the reputation of everyone and assigns people handles.  
+Alternatively, the matrix implementation would make it baked into a forward-thinking platform that protects user's privacy while being decentralized.  
 
 
