@@ -4,9 +4,9 @@ categories:
 tags:
  - blog 
 ---
-# Make a blog
+# Goal: Make a blog
 Well this is boring
-# Make a blog that uses markdown and automatically responds to changes via git using modern tool in language you don't know.
+# Goal: Make a blog that uses markdown and automatically responds to changes via git using modern tool in language you don't know.
 There we go.
 
 So we basically have the following steps to do:
@@ -24,9 +24,9 @@ Then I tried installing deno - the js runtime - onto my rpi (aarch64/linux). Nat
 This would also be when my raspberry pi crashed and stopped working.  
 I make it do a lot of work. But I created a docker-compose setup to run an aarch64 build.   
 But docker is stupid so I shall run it natively.
-Now it runs on the rpi4 without docker via a simple python script.
-Theoretically, the website should reflect the changes I make here after I push them.
-
-
-Features to add 
+Now it runs on the rpi4 without docker via a simple python script.  
+Theoretically, the website should reflect the changes I make here after I push them. AND THEY DO.   
+MY GOAL IS COMPLETE.  
+Time to work on a real blog post.
+## Features to add 
 - rss feeding
